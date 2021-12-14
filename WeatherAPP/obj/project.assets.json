@@ -1,0 +1,88 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "weatherLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/weatherLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/weatherLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "weatherLibrary/1.0.0": {
+      "type": "project",
+      "path": "../watherLibrary/weatherLibrary.csproj",
+      "msbuildProject": "../watherLibrary/weatherLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "weatherLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/sasamarjanovic/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/sasamarjanovic/Projects/oop_homework3/WeatherAPP/WeatherAPP.csproj",
+      "projectName": "WeatherAPP",
+      "projectPath": "/Users/sasamarjanovic/Projects/oop_homework3/WeatherAPP/WeatherAPP.csproj",
+      "packagesPath": "/Users/sasamarjanovic/.nuget/packages/",
+      "outputPath": "/Users/sasamarjanovic/Projects/oop_homework3/WeatherAPP/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/sasamarjanovic/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "/Users/sasamarjanovic/Projects/oop_homework3/watherLibrary/weatherLibrary.csproj": {
+              "projectPath": "/Users/sasamarjanovic/Projects/oop_homework3/watherLibrary/weatherLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
