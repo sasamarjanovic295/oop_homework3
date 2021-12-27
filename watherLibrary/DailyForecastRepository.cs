@@ -67,8 +67,7 @@ namespace weatherLibrary
             {
                 if (dailyForecast.DailyDate.Date == date.Date)
                 {
-                    forecasts.Remove(dailyForecast);
-                    Console.WriteLine();
+                    forecasts.Remove(dailyForecast);                  
                     return;
                 }
             }
