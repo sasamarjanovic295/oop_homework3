@@ -25,7 +25,7 @@ namespace weatherLibrary
             {
                 if (maxTemperature < dailyForecast)
                 {
-                    maxTemperature = dailyForecast.DayWeather.GetTemperature();
+                    maxTemperature = dailyForecast.DailyWeather.GetTemperature();
                 }
             }
             return maxTemperature;

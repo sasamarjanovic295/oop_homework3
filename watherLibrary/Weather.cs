@@ -69,5 +69,21 @@ namespace weatherLibrary
         {
             return $"T={temperature}°C, w={windSpeed}km/h, h={humidity}%";
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Weather == false) return false;
+            return this.Equals((Weather)obj);
+        }
+
+        public  bool Equals(Weather weather)
+        {
+            return temperature == weather.GetTemperature() && humidity == weather.GetHumidity() && windSpeed == weather.GetWindSpeed(); 
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(temperature, humidity, windSpeed);
+        }
     }
 }
